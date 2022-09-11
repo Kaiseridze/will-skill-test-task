@@ -1,0 +1,153 @@
+.purchase {
+  position: relative;
+}
+
+.purchase__text {
+  text-align: center;
+  user-select: none;
+}
+
+.purchase__title {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 57px;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+
+.purchase__title::after {
+  content: "СО СКИДКОЙ -15% ПЕРВЫМ!";
+  color: #FCB500;
+  text-align: center;
+  margin-bottom: 89px;
+}
+
+.purchase__price::before {
+  content: "750₽";
+  margin-right: 35px;
+  text-decoration: line-through;
+  font-size: 36px;
+  color: #ADADAD
+}
+
+.purchase__price {
+  display: flex;
+  justify-content: center;
+  color: #FFFFFF;
+  font-size: 48px;
+  line-height: 57px;
+  margin-bottom: 50px;
+}
+
+
+.purchase__benefits {
+  display: flex;
+  justify-content: space-between;
+}
+
+.purchase__item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.purchase__img {
+  display: block;
+  max-height: 150px;
+  max-width: 100%;
+  margin-bottom: 78px;
+}
+
+.purchase__img--main {
+  margin-bottom: 45px;
+}
+
+.purchase__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.purchase__description--two {
+  font-size: 36px;
+  line-height: 43px;
+}
+
+.purchase__description--one::after {
+  content: 'имбирь';
+  color: #FCB500;
+  margin-top: 5px;
+}
+
+.purchase__description--two::after {
+  content: 'Специальная цена';
+  color: #FCB500;
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 5px;
+}
+
+.purchase__description--three::after {
+  content: 'вирусы';
+  color: #FCB500;
+  margin-top: 5px;
+}
+
+.purchase__order {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.purchase__button {
+  font-size: 18px;
+  line-height: 21px;
+  padding: 16px 32px;
+  background-color: #FCB500;
+  cursor: pointer;
+}
+
+@media (max-width: 1170px) {
+
+  .purchase{
+    margin-top: 48px;
+  }
+
+  .purchase__title {
+    font-size: 30px;
+    line-height: 39px;
+
+  }
+
+  .purchase__title::after {
+    margin-bottom: 20px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .purchase__benefits {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .purchase__description--two {
+    font-size: 24px;
+    line-height: 43px;
+  }
+
+  .purchase__img {
+    margin-bottom: 20px;
+  }
+
+  .purchase__item {
+    margin: 35px 0
+  }
+}

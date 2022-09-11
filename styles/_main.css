@@ -1,0 +1,119 @@
+.main {
+  position: relative;
+  display: flex;
+  padding: 48px 0;
+  background-image: url('/assets/background.svg');
+  background-size: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+.main__title {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 144px;
+  line-height: 152px;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+  z-index: 4;
+}
+
+.main__paragraph {
+  font-size: 24px;
+  line-height: 28px;
+  max-width: 672px;
+  margin-bottom: 160px;
+}
+
+.main__pic {
+  position: absolute;
+}
+
+.main__pic.main__pic--first {
+  max-width: 25%;
+  left: 63%;
+  top: 30%;
+  z-index: 1;
+}
+
+.main__pic.main__pic--second {
+  max-width: 25%;
+  right: 3%;
+  top: 5%;
+  z-index: 2;
+}
+
+.main__pic.main__pic--third {
+  right: 10%;
+  top: 45%;
+  z-index: 3;
+}
+
+
+.main__title.second {
+  color: #000000;
+  font-size: 36px;
+  line-height: 43px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 1166px) {
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main__title {
+    font-size: 50px;
+    line-height: 80px;
+    margin-bottom: 0;
+  }
+
+  .second {
+    font-size: 50px;
+    line-height: 80px
+  }
+
+  .main__paragraph {
+    margin-bottom: 30px;
+  }
+
+  .main__pic.main__pic--first, .main__pic.main__pic--second, .main__pic.main__pic--third {
+    display: none;
+  }
+}
+
+@media (max-width: 728px) {
+
+  .main__title {
+    font-size: 43px;
+    line-height: 43px;
+    margin-bottom: 20px;
+  }
+
+  .second {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .main__paragraph {
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: repeat;
+  }
+
+  @media (max-width: 261px) {
+    .main__title {
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+}

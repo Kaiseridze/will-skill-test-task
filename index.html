@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="/styles/normalize.css" />
+		<link rel="stylesheet" href="/styles/styles.css" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>WillSkill test</title>
+	</head>
+	<body>
+		<header class="header">
+			<img src="/assets/logo.svg" alt="Nootris logo" class="header__logo" />
+			<nav>
+				<div class="header__burger">
+					<span></span>
+				</div>
+				<ul class="header__nav">
+					<li class="header__item"><a href="#">FAQ</a></li>
+					<li class="header__item"><a href="#">Оплата и&nbsp;доставка</a></li>
+					<li class="header__item"><a href="#">Возврат</a></li>
+					<li class="header__item"><a href="#">Исследования</a></li>
+					<li class="header__item"><a href="#">Личный кабинет</a></li>
+					<li class="header__item">
+						<a href="tel:+7-(800)-600-09-90">8 (800) 600-09-90</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="header__buy">
+				<img
+					class="header__basket"
+					src="/assets/basket.svg"
+					alt="Nootris buy basket"
+				/>
+				<img class="header__badge" src="/assets/badge.svg" alt="badge" />
+			</div>
+		</header>
+
+		<section class="main">
+			<div class="container">
+				<h1 class="main__title">Активируй иммунитет!</h1>
+				<img
+					class="main__pic main__pic--first"
+					src="/assets/ginger.svg"
+					alt="ginger"
+				/>
+				<img
+					class="main__pic main__pic--second"
+					src="/assets/nootris.svg"
+					alt="nootris"
+				/>
+				<img
+					class="main__pic main__pic--third"
+					src="/assets/lemon.svg"
+					alt="lemon"
+				/>
+				<p class="main__paragraph">
+					Всего пять секунд в&nbsp;день помогут укрепить иммунитет
+					и&nbsp;повысить защитные силы организма
+				</p>
+				<h3 class="main__title second">Nootris помогает</h3>
+				<p class="main__paragraph">
+					Вашему организму во&nbsp;время пандемии и&nbsp;сезонных простуд
+				</p>
+			</div>
+		</section>
+
+		<section class="purchase">
+			<div class="container">
+				<div class="purchase__text">
+					<h1 class="purchase__title">ПОЛУЧИ ЗАЩИТУ ИММУНИТЕТА</h1>
+					<span class="purchase__price">690₽</span>
+				</div>
+
+				<div class="purchase__benefits">
+					<div class="purchase__item">
+						<img class="purchase__img" src="/assets/ginger.svg" alt="ginger" />
+						<p class="purchase__description purchase__description--one">
+							Содержит
+						</p>
+					</div>
+					<div class="purchase__item">
+						<img
+							class="purchase__img purchase__img--main"
+							src="/assets/nootris_rotated.svg"
+							alt="nootris"
+						/>
+						<p class="purchase__description purchase__description--two">
+							+ Бесплатная доставка
+						</p>
+					</div>
+					<div class="purchase__item">
+						<img class="purchase__img" src="/assets/virus.svg" alt="virus" />
+						<p class="purchase__description purchase__description--three">
+							Нейтрализует
+						</p>
+					</div>
+				</div>
+				<div class="purchase__order">
+					<button type="button" class="purchase__button">
+						Оформить заказ!
+					</button>
+				</div>
+			</div>
+		</section>
+		<script type="text/javascript" src="app.js"></script>
+	</body>
+</html>
